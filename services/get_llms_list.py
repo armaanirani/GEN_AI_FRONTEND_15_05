@@ -14,7 +14,7 @@ def get_llms_list():
     """
     Get the list of available LLMs from the server.
     """
-    llms_api_endpoint = f"{base_url}/llms/llm_options"
+    llms_api_endpoint = f"{base_url}/llm/llm_options"
     logger.info(f"Sending GET request to {llms_api_endpoint}")
     
     try:
