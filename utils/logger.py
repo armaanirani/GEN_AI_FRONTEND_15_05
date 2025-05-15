@@ -7,7 +7,7 @@ LOG_PATH = os.path.join(LOG_DIR, "app.log")
 
 os.makedirs(LOG_DIR, exist_ok=True)
 
-logger = logging.getLogger("llm_api")
+logger = logging.getLogger("streamlit_logs")
 logger.setLevel(logging.INFO)
 
 file_handler = RotatingFileHandler(LOG_PATH, maxBytes=5_000_000, backupCount=5)
