@@ -26,8 +26,6 @@ except Exception as e:
 
 # Pydantic environment settings
 class AppConfig(BaseSettings):
-    GROQ_API_KEY: str
-    OPENAI_API_KEY: str
     APP_API_KEY: str
 
     class Config:
